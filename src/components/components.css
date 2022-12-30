@@ -1,0 +1,132 @@
+/* body {
+  transition: 1s;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+#mode-change-div{
+    background-color: white;
+    display: flex;
+    height:fit-content ;
+    width: fit-content;
+    border: solid black 1px;
+    border-radius: 25px;
+    transition: 0.2s;
+}
+#mode-change-div:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+#question-div {
+  width: 80%;
+  height: 75vh;
+  background-color: rgb(196, 194, 194);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  
+  -webkit-box-shadow: 1px 1px 20px 5px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 20px 5px rgba(0,0,0,0.75);
+box-shadow: 1px 1px 20px 5px rgba(0,0,0,0.75);
+  border-radius: 25px;
+  transition: 0.5s;
+}
+#Question {
+  margin-bottom: 3.5vh;
+  font-size: 1.5em;
+}
+img{
+    height: 5vh;
+    width: 5vh;
+}
+#display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button:hover {
+  cursor: pointer;
+}
+#kal-button {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#answer-button {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vh;
+}
+.ans-button {
+  border: none;
+  font-size: larger;
+  background-color: gray;
+  height: 6.5vh;
+  border-radius: 25px;
+  margin-bottom: 3.5vh;
+  transition: 0.5s;
+}
+.ans-button:hover {
+  scale: 1.05;
+}
+#highlight-button {
+  display: flex;
+  height: 5.5vh;
+}
+.highlight {
+  background-color: red;
+  color: white;
+  border-radius: 25px;
+  font-size: medium;
+  font-weight: 600;
+  border: none;
+  margin-left: 2vh;
+  width: 22vh;
+}
+
+#restart-button{
+    height: 5vh;
+    background-color: red;
+    font-size: large;
+    color: white;
+    border-radius: 5px;
+    border: dashed black;
+}
+
+
+@media only screen and (max-width: 750px) {
+    .ans-button{
+        font-size: 0.9em;
+        font-weight: 600;
+        min-height: 6.5vh;
+    }
+    #question-div{
+        height: fit-content;
+        width: 90%;
+    }
+    #highlight-button{
+        margin-bottom: 2.5vh;
+    }
+    #Question{
+        font-size: 1.2em;
+    }
+    #kal-button{
+        margin-bottom: 5vh;
+    }
+    #restart-button{
+        margin-bottom: 3vh;
+    }
+    #score{
+        font-size: 0.8em;
+
+    }
+    .highlight{
+        width: 24vh;
+    }
+}
